@@ -1,0 +1,15 @@
+/* Limit these definitions to the things that are applicable to every screen. In other cases, 
+   use CSS modules with component-local scope, and import/compose for shared definitions. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: calibri, sans-serif;
+}
+
+html, body { height: 100vh; }
+
+p, a, ul, ol, li {
+  padding: .5rem;
+}
