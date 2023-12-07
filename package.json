@@ -15,7 +15,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sl-react-ui": "file:../sl-react-ui/sl-react-ui-1.0.0.tgz",
-    "wouter": "^2.12.1"
+    "sl-spiel": "*",
+    "sl-web-audio": "*",
+    "sl-web-face": "*",
+    "sl-web-speech": "*",
+    "wouter": "^2.12.1",
+    "yaml": "^2.3.4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.3",
