@@ -1,6 +1,6 @@
 import { Route } from 'wouter';
-import HomeScreen from '../homeScreen/HomeScreen';
-import PlayScreen from '../playScreen/PlayScreen';
+import HomeScreen from '@/homeScreen/HomeScreen';
+import PlayScreen from '@/playScreen/PlayScreen';
 
 function Router() {
   return (

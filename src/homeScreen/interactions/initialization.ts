@@ -1,6 +1,6 @@
-import Project from "../../persistence/types/Project.ts";
-import {fetchProject} from "../../persistence/projects.ts";
-import {init as initRecognizer} from "../../conversations/theRecognizer.ts";
+import Project from "@/persistence/types/Project.ts";
+import {fetchProject} from "@/persistence/projects.ts";
+import {init as initRecognizer} from "@/conversations/theRecognizer.ts";
 
 export type InitResults = {
   project:Project

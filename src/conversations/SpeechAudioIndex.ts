@@ -1,3 +1,4 @@
+import {fetchFinalTake} from "@/persistence/speech.ts";
 import { SpeechAudio } from 'sl-web-face';
 import { LipzEvent, textToViseme } from 'sl-web-speech';
 import { wavBytesToAudioBufferAndCues, WavCue } from "sl-web-audio";
@@ -11,14 +12,6 @@ function _wavCuesToLipzEvents(cues:WavCue[]):LipzEvent[] {
     lipzEvents.push(lipzEvent);
   }
   return lipzEvents;
-}
-
-async function fetchFinalTake(spielName:string, characterName:string, speechId:string, dialogueText:string):Promise<Uint8Array|null> {
-  const url = `http://localhost:3000/finalTake/${spielName}/${characterName}/${speechId}/${dialogueText}`; // TODO fix.
-  const response = await fetch(url);
-  if (response.status !== 200) return null;
-  const arrayBuffer = await response.arrayBuffer();
-  return new Uint8Array(arrayBuffer);
 }
 
 class SpeechAudioIndex {

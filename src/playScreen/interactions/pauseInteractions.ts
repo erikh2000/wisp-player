@@ -1,4 +1,4 @@
-import PausedDialog from "../dialogs/PausedDialog.tsx";
+import PausedDialog from "@/playScreen/dialogs/PausedDialog.tsx";
 
 export function pause(setModalDialog:Function) {
   setModalDialog(PausedDialog.name);
