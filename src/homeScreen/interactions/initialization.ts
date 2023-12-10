@@ -13,7 +13,7 @@ export async function init():Promise<InitResults|null> {
   if (isInitializing) return null;
   if (!initResults) {
     isInitializing = true;
-    initRecognizer();
+    await initRecognizer();
     initResults = {
       project: await fetchProject()
     };

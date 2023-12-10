@@ -19,7 +19,7 @@ function PlayScreen() {
   const _handleKeyDown = (event:KeyboardEvent) => { _onKeyDown(event, setModalDialog); };
 
   useEffect(() => {
-    init().then((initResults:InitResults|null) => {
+    init(setLocation).then((initResults:InitResults|null) => {
       window.addEventListener('keydown', _handleKeyDown);
       if(initResults) setInitResults(initResults);
     });

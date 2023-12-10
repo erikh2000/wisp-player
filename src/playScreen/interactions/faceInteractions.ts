@@ -1,18 +1,24 @@
-import {AttentionController, BlinkController, CanvasComponent, FaceEventManager, loadFaceFromUrl} from "sl-web-face";
+import {AttentionController, BlinkController, CanvasComponent, FaceEventManager, loadFaceFromUrl, Emotion, ISpeechAudio} from "sl-web-face";
 
 const FACE_NAME = 'Primary';
 
 let eventManager:FaceEventManager|null = null;
 let blinkController:BlinkController|null = null;
 let attentionController:AttentionController|null = null;
+let faceId:number|null = null;
 
-export async function initFace(faceUrl:string):Promise<[faceId:number, face:CanvasComponent]> {
-  eventManager = new FaceEventManager();
+export function setSpeechAudioSpeakingFace(speechAudio:ISpeechAudio) {
+  if (!eventManager || faceId === null) throw Error('Unexpected');
+  speechAudio.setSpeakingFace(eventManager, faceId);
+}
+
+export async function initFace(faceUrl:string):Promise<CanvasComponent> {
   const face = await loadFaceFromUrl(faceUrl);
-  const faceId = eventManager.bindFace(FACE_NAME, face);
+  eventManager = new FaceEventManager();
+  faceId = eventManager.bindFace(FACE_NAME, face);
   attentionController = new AttentionController(eventManager, faceId);
   blinkController = new BlinkController(eventManager, faceId);
-  return [ faceId, face ];
+  return face;
 }
 
 export function startFaceAnimation() {
@@ -27,7 +33,9 @@ export function stopFaceAnimation() {
 
 export function deinitFace() {
   stopFaceAnimation();
-  eventManager = null;
-  attentionController = null;
-  blinkController = null;
+}
+
+export function setEmotion(emotion:Emotion) {
+  if (!eventManager || faceId === null) return;
+  eventManager.setEmotion(faceId, emotion);
 }

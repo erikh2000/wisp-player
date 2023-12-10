@@ -7,6 +7,7 @@ import {UNSPECIFIED_NAME} from "@/persistence/projects";
 import {Emotion, FakeSpeechAudio, ISpeechAudio} from 'sl-web-face';
 import {Spiel, SpielLine, SpielReply} from 'sl-spiel';
 import {calcEndOfDialoguePause, Recognizer} from "sl-web-speech";
+import {setSpeechAudioSpeakingFace} from "@/playScreen/interactions/faceInteractions.ts";
 
 // See README.md for a description of the ConversationManager's state machine.
 export enum ConversationState {
@@ -212,7 +213,7 @@ class ConversationManager {
     this._stopAnySpeaking();
     this._currentSpeechAudio = await this._speechAudioIndex.findSpeechAudio(this._spielName, character, speechId, dialogue);
     if (!this._currentSpeechAudio) this._currentSpeechAudio = new FakeSpeechAudio(dialogue, this._speedMultiplier);
-    // setSpeechAudioSpeakingFace(this._currentSpeechAudio);
+    setSpeechAudioSpeakingFace(this._currentSpeechAudio);
 
     this._pendingPauseDuration = calcEndOfDialoguePause(dialogue, this._speedMultiplier);
     this._currentSpeechAudio.play(onSpeakEnd.bind(this));

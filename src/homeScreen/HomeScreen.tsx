@@ -17,7 +17,7 @@ function HomeScreen() {
     });
   },[setInitResults]);
   
-  if (!initResults) return <div className={styles.container}><LoadingBox className='loading project' /></div>;
+  if (!initResults) return <div className={styles.loadingFullscreen}><LoadingBox className='loading project' /></div>;
   
   return (
     <div className={styles.container}>
