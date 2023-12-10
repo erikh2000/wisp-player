@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# WISP Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WISP player runs projects created with WISP studio, providing a minimal interface for the user to interact with the project.
 
-Currently, two official plugins are available:
+At time of writing, I am still working out the various ways it may be built and deployed. But one way will be as a bundle of player code that can be exported along with a project assets from WISP Studio. And these can then be hosted from a web server. And dare I say it, I'd like these exported archives to hostable from itch.io, but that will be some more work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Licensing
 
-## Expanding the ESLint configuration
+My code and other files in this repository are licensed under the MIT open source license.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+But if you see a LICENSE file in a sub-directory of the repository, that license will apply to all files found in that directory.
 
-- Configure the top-level `parserOptions` property like this:
+### Contributing
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+The project isn't open to contributions at this point. But that could change. Contact me if you'd like to collaborate.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Contacting
+
+You can reach me on LinkedIn. I'll accept connections if you will just mention some shared interest in your connection request.
+
+https://www.linkedin.com/in/erikhermansen/
