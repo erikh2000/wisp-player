@@ -2,7 +2,7 @@
 
 WISP player runs projects created with WISP studio, providing a minimal interface for the user to interact with the project.
 
-At time of writing, I am still working out the various ways it may be built and deployed. But one way will be as a bundle of player code that can be exported along with a project assets from WISP Studio. And these can then be hosted from a web server. And dare I say it, I'd like these exported archives to hostable from itch.io, but that will be some more work.
+At time of writing, I am still working out the various ways it may be built and deployed. But one way will be as a bundle of player code that can be exported along with project assets from WISP Studio. And these can then be hosted from a web server. And dare I say it, I'd like these exported archives to be hostable from itch.io, but that will be some more work.
 
 ## Licensing
 
