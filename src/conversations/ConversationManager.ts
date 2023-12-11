@@ -286,7 +286,11 @@ class ConversationManager {
     this._goToSpeakingLine().then(() => {});
   }
 
-  stop() { this._goToStopped(); }
+  stop() {
+    this._goToStopped();
+    if (!this._spiel) return 0;
+    return this._spiel.currentNodeIndex;
+  }
 }
 
 export default ConversationManager;
