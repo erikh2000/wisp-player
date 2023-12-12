@@ -12,7 +12,7 @@ function HomeScreen() {
   const [initResults, setInitResults] = useState<InitResults|null>(null);
   
   useEffect(() => {
-    init().then((initResults:InitResults|null) => {
+    init(setLocation).then((initResults:InitResults|null) => {
       if(initResults) setInitResults(initResults);
     });
   },[setInitResults]);
