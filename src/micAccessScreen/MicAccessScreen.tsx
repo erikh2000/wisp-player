@@ -1,6 +1,6 @@
 import styles from './MicAccessScreen.module.css';
 import secureMic from './images/secureMic.png';
-import poweredByWisp from '@/HomeScreen/images/poweredByWisp.png';
+import poweredByWisp from '@/homeScreen/images/poweredByWisp.png';
 
 import {useEffect, useState} from "react";
 import {useLocation} from "wouter";
