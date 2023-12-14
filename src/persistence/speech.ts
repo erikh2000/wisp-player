@@ -1,5 +1,6 @@
 import { fillTemplate } from "./pathUtil.ts";
 import {SPEECH_FINAL_URL_TEMPLATE} from "./urlTemplates.ts";
+import {baseUrl} from "@/common/urlUtil.ts";
 
 function _removeNonAlphaNumeric(text:string):string {
   return text.replace(/[^a-zA-Z0-9]/g, '');
@@ -15,7 +16,7 @@ function _getFirstThreeWords(dialogueText:string):string {
 
 function _getFinalTakeUrl(spielName:string, characterName:string, speechId:string, dialogueText:string):string {
   const firstThreeWords = _getFirstThreeWords(dialogueText);
-  return fillTemplate(SPEECH_FINAL_URL_TEMPLATE, {spielName, characterName, speechId, firstThreeWords});
+  return baseUrl(fillTemplate(SPEECH_FINAL_URL_TEMPLATE, {spielName, characterName, speechId, firstThreeWords}));
 }
 
 export async function fetchFinalTake(spielName:string, characterName:string, speechId:string, dialogueText:string):Promise<Uint8Array|null> {

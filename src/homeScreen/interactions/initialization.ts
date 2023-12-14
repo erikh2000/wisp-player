@@ -2,6 +2,7 @@ import Project from "@/persistence/types/Project.ts";
 import {fetchProject} from "@/persistence/projects.ts";
 import {init as initRecognizer} from "@/conversations/theRecognizer.ts";
 import {checkMicAccess, MicAccessResult} from "@/conversations/micCheckUtil.ts";
+import {MIC_ACCESS_URL} from "@/common/urlUtil.ts";
 
 export type InitResults = {
   project:Project
@@ -16,7 +17,7 @@ export async function init(setLocation:Function):Promise<InitResults|null> {
   try {
     if (!initResults) {
       if (await checkMicAccess() !== MicAccessResult.AVAILABLE) {
-        setLocation('/micAccess');
+        setLocation(MIC_ACCESS_URL);
         return null;
       }
       await initRecognizer();

@@ -1,6 +1,7 @@
 import {deinitFace, initFace, startFaceAnimation} from "./faceInteractions.ts";
 import {initConversation, startConversation} from "./conversationInteractions.ts";
 import {onDrawScene} from "./drawInteractions.ts";
+import {baseUrl, HOME_URL} from "@/common/urlUtil.ts";
 
 import { CanvasComponent } from 'sl-web-face';
 import { IDrawCallback } from "sl-react-ui";
@@ -14,7 +15,7 @@ let isInitializing = false;
 let initResults:InitResults|null = null;
 
 async function _firstInit():Promise<InitResults> {
-  const face = await initFace('/project/faces/Grubbo.face');
+  const face = await initFace(baseUrl('/project/faces/Grubbo.face')); // TODO get from project instead
   await initConversation();
   return {
     face,
@@ -41,7 +42,7 @@ export async function init(setLocation:Function):Promise<InitResults|null> {
     
   } catch(e) {
     console.error(e);
-    setLocation('/');
+    setLocation(HOME_URL);
   } finally {
     isInitializing = false;
   }

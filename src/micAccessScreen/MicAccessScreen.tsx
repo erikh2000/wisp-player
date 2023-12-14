@@ -1,13 +1,13 @@
 import styles from './MicAccessScreen.module.css';
 import secureMic from './images/secureMic.png';
 import poweredByWisp from '@/homeScreen/images/poweredByWisp.png';
+import {MicAccessResult} from "@/conversations/micCheckUtil";
+import {HOME_URL} from "@/common/urlUtil.ts";
+import {accessTheMic} from "./interactions/microphone";
 
 import {useEffect, useState} from "react";
 import {useLocation} from "wouter";
 import 'sl-react-ui/dist/style.css';
-import {accessTheMic} from "./interactions/microphone";
-import {MicAccessResult} from "@/conversations/micCheckUtil";
-
 
 function _getCallToActionText(micAccessResult:MicAccessResult|null):string {
   switch (micAccessResult) {
@@ -34,7 +34,7 @@ function MicAccessScreen() {
   },[setMicAccessResult]);
 
   useEffect(() => {
-    if (micAccessResult === MicAccessResult.AVAILABLE) setLocation('/');
+    if (micAccessResult === MicAccessResult.AVAILABLE) setLocation(HOME_URL);
   }, [micAccessResult]);
   
   const callToActionText = _getCallToActionText(micAccessResult);

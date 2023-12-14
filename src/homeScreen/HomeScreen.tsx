@@ -1,9 +1,10 @@
 import styles from './HomeScreen.module.css';
 import poweredByWisp from './images/poweredByWisp.png';
+import { InitResults, init } from "./interactions/initialization";
+import {PLAY_URL} from "@/common/urlUtil.ts";
 
 import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { InitResults, init } from "./interactions/initialization";
 import { LoadingBox } from "sl-react-ui";
 import 'sl-react-ui/dist/style.css';
 
@@ -29,7 +30,7 @@ function HomeScreen() {
         <p>Escape to pause. Otherwise, control is entirely by voice. Talk to characters in English.</p>
         <h1>Credits</h1>
         <p>{initResults.project.creditsText}</p>
-        <button className={styles.startButton} onClick={() => setLocation('/play')}>Start</button>
+        <button className={styles.startButton} onClick={() => setLocation(PLAY_URL)}>Start</button>
       </div>
       <div className={styles.footer}>
         <img className={styles.poweredByWisp} src={poweredByWisp} alt="Speaking Privately with WISP" />
