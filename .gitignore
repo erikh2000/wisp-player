@@ -3,7 +3,6 @@ dist
 dist-ssr
 *.local
 example-projects
-public/project
 workAssets
 
 # Logs
