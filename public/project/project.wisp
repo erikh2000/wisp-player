@@ -1,11 +1,11 @@
-created: 1699926441593
+title: The Reckoning
+created: 1704153891907
 activeFace: Grubbo
 activeLocation: ""
 activeSpiel: The Reckoning
 entrySpiel: The Reckoning
 language: en-us
 aboutText: Grubbo's got a problem with you. Or maybe you got a problem with him?
-  You better talk to him.
-creditsText: Erik Hermansen (writing, art, voice)
+  You two better talk.
+creditsText: Erik Hermansen
 version: 0
-title: The Reckoning

@@ -1,5 +1,410 @@
 nodes:
-  - GRUBBO: (amused) Hey, Pukeface. / Hey, dummy. / Hey, chuckle butt.
-  - GRUBBO: What's your problem? / What's wrong with you? / What's the deal with you?
-rootReplies: []
+  - GRUBBO:
+      dialogue: Hey, Jellyface. / Hey, Bubba Baloney. / Hey, you. Doctor Genius over
+        there. / Hey, Goober Head. / Hey, Cob Chomper. / Hey, Donkey Butt. /
+        Hey, you. Cheezy Squeezy. / Hey, you. Captain Scrunchie. / Hey, Turbo
+        Trousers. / Hey, Pickle Breath. / Hey, Sweet Chunks. / Hey, you.
+        Lampshade Face. / Hey, you. Nickle Licker. / Hey, Clown Cuddler. / Hey,
+        you. Freakmondo!
+      replies:
+        - GRUBBO: don't...name / don't...names / do not...name / do not...names ->
+            (amused) But I'm gonna call you names. / You can't stop me. / Hey, I
+            say what I see.
+        - GRUBBO: what -> (irritated) What?
+        - GRUBBO: yes -> (irritated) Yes?
+        - GRUBBO: yeah -> (irritated) Yeah?
+      postDelay: 2
+  - GRUBBO:
+      dialogue: (confused) You think you're better than me?
+      replies:
+        - GRUBBO: yes / yeah / sure / of course / I do / I am -> (amused) At least you're
+            honest. / Yeah, I know you do. / You're a smug little puppy. / Yeah,
+            say it proud. / Of course you do.
+        - GRUBBO: no / nope / not at all -> (amused) Yeah, you do. Yeah, you do. / Don't
+            lie. / Oh, just say the truth. / No, you think you're better. / Who
+            you fooling?
+        - GRUBBO: maybe / don't know / possibly / could be / perhaps / not sure ->
+            (suspicious) You haven't formed an opinion. / You don't know. / Not
+            sure yet, huh? / You are uncertain.
+      postDelay: 4
+  - GRUBBO:
+      dialogue: (irritated) Why you always doing that wide swagger? / Why you always
+        strutting proud? / Why you always catwalking down the road? / Why you
+        always rooster-stepping in front of everybody?
+      replies:
+        - GRUBBO: i want to...] / I can...] / do what I want...] / my prerogative / what I
+            do...] -> (irritated) And we all gotta witness it. / Well, you're
+            free to frolic. / You can do it, but that doesn't mean you should. /
+            Yeah, go hard, you dumpster diva.
+        - GRUBBO: i'm not...] / i don't...do that...] / I am not...] / I don't...do
+            this...] / wasn't me...] / was not me...] -> (irritated) Naw, I saw
+            you this morning. / Lying and denying. / Why do you lie? / Everybody
+            saw it.
+      postDelay: 4
+  - GRUBBO: (suspicious) I see you out there.
+  - GRUBBO: (suspicious) Looking behind you for your entourage. / Acting like the
+      belle of the ball. / Waiting for people to write songs about you. /
+      Stepping into moonbeams like you own em. / Wearing that attitude like a
+      tight snack-jacket. / Wafting your smells onto other people.
+  - GRUBBO: (irritated) You think you're some oven-baked dookie cookie. / You think
+      you're the whole cat rodeo show. / You think you're packed with rainbow
+      juice.
+  - GRUBBO:
+      dialogue: (thinking) The big question is... / I gotta ask you... / Here's my
+        question...
+      replies:
+        - GRUBBO: yes / yeah / huh -> (angry) Shh!
+      postDelay: 2
+  - GRUBBO:
+      dialogue: (confused) Do you think you're smarter than me?
+      replies:
+        - GRUBBO: yes / yeah / sure / of course / I do / I am -> (amused) Oh, with your
+            powerful brain. / Yeah, yeah, that's what you think. / Of course, of
+            course. / And you need no proof. You just know.
+        - GRUBBO: no / nope / not at all -> (amused) No, really. Be honest. / It's okay to
+            tell me. / You think it. I see it on your face. / Oh, yes you do!
+        - GRUBBO: maybe / don't know / possibly / could be / perhaps / not sure ->
+            (suspicious) So non-committal. / Neutral as Switzerland. / It's a
+            simple question, and you know the answer. / Pretending you don't
+            have an opinion.
+      postDelay: 6
+  - GRUBBO:
+      dialogue: (confused) So where are you from?
+      replies: []
+      postDelay: 6
+  - GRUBBO:
+      dialogue: You're from a special place for special people. / What a magical place
+        that must be. / That's what I thought. / How wonderful for you.
+      replies: []
+      postDelay: 1
+  - GRUBBO:
+      dialogue: Did you go to college?
+      replies:
+        - GRUBBO: yes / yeah / sure / of course / I did / for...years / for...a bit /
+            for...a while / graduated -> Applause break. Everyone's impressed. /
+            Of course, you did. / I bet they taught you how to be superior /
+            That's where you got your attitude.
+        - GRUBBO: no] / nope / I did not / I didn't -> (amused) You didn't need it, right?
+            Already so smart. / Well, you act like you did. / Oh, maybe someday
+            you will. / Oh, a minor flaw in your perfect life.
+      postDelay: 6
+  - GRUBBO:
+      dialogue: You seem like you take a lot of showers. Is that right?
+      replies:
+        - GRUBBO: no / nope / not really / I don't / I do not -> (amused) You're too good
+            to take a shower, I guess. / So how you smell is other people's
+            problem. / Oh, you don't need to worry about your hygiene.
+        - GRUBBO: bath / bathe / baths -> (amused) Soaking in the tub all day like
+            royalty. / How fancy. / You probably donate your bathwater to the
+            less fortunate.
+        - GRUBBO: yes / yeah / definitely / of course / certainly / I do / I take lots / I
+            take a lot -> (irritated) Yeah, after a long shower, you like to dry
+            off and take another shower. / So clean. So perfect. / Yeah, you
+            wouldn't ever want to be dirty. / You probably think I'm nasty by
+            comparison. / I wish I had time to take that many showers.
+      postDelay: 6
+  - GRUBBO:
+      dialogue: (amused) Look at your hands!
+      replies:
+        - GRUBBO: hands -> (amused) Yes, look at them. / Yes, your hands.
+      postDelay: 2
+  - GRUBBO:
+      dialogue: (happy) So clean and smooth! / So baby-soft and perfect! / So
+        well-kept and lovely!
+      replies:
+        - GRUBBO: thank you / thanks -> (happy) Of course. But tell me... / Sure, but tell
+            me...
+      postDelay: 2
+  - GRUBBO:
+      dialogue: What do you wash your dainty hands with?
+      replies:
+        - GRUBBO: water -> (amused) Oh, you use water. How intriguing! / It must be a very
+            special kind of water. / I must tell all my friends about using
+            water. / Water? Such amazing results.
+        - GRUBBO: soap / soaps -> (amused) Probably special soap from Constantinople. /
+            Lotion or bar soap, I wonder. / I marvel at the results of your soap
+            usage. / Soap, you say? How wonderful. / Oh, yeah, I bet you get a
+            super-thick lather going.
+        - GRUBBO: lotion / lotions -> It must be lotion. A bar of soap would not suffice.
+            / Lotion! Only the fanciest would do. / Ah, the finest lotion from
+            Xanadu, fit for the emperor Kublai Khan! / Ah, the kind they give
+            you when you're trapped in a pit.
+        - GRUBBO: moisturizer -> (amused) Good choice! We all need moisture. / You just
+            love getting your handsies all super-moist! / I knew it! I just knew
+            you moisturized. / Oooh, I bet it came in a little box with sparkles
+            and filagrees.
+        - GRUBBO: nothing] / don't...use...anything -> (amused) Yeah, you just wash your
+            hands with air. / Wow, I never met somebody that washed their hands
+            with nothing. / You don't need anything. That's just how you do it.
+        - GRUBBO: I don't...wash -> (amused) You don't wash your hands? Classy. / I guess
+            you clean your hands with magic. / Maybe the dirt avoids attaching
+            itself to your hands. / Oh, so you clean your hands with the power
+            of your mind.
+        - GRUBBO: air / my mind / magic / mental -> (irritated) Yeah, you got your special
+            way. / Yeah, you're amazing.
+      postDelay: 6
+  - GRUBBO:
+      dialogue: And those sturdy teeth... / And your hardy teeth... / And your pearly
+        teeth...
+      replies:
+        - GRUBBO: teeth -> Look at em glimmering. / Oh, yes, your teeth. / Those fantastic
+            teeth. / Especially those gorgeous premolars.
+      postDelay: 1
+  - GRUBBO:
+      dialogue: Do you brush those chompers every Tuesday?
+      replies:
+        - GRUBBO: yes / yeah / I do / definitely / certainly / every Tuesday -> (amused)
+            Oh, they are so Tuesday Fresh. / And maybe Wednesday too. / Well,
+            another Tuesday's coming soon. / They smell like what you ate on
+            Tuesday. / I can tell!
+        - GRUBBO: no / nope / I didn't / I did not -> (irritated) Well, don't overtax
+            yourself. / Oh, just go ahead and skip Tuesdays. / Well, your breath
+            would love it if you did. / Yeah, I can tell you missed last
+            Tuesday.
+        - GRUBBO: every day / daily / all the days -> (amused) Every single day. Let's get
+            you a trophy. / See how they glisten with daily care. / You keep
+            scrubbing your facehole every day, champ.
+        - GRUBBO: twice...day / two times...day / twice...daily / two times...daily /
+            morning...night -> (amused) Two times! Every single day! / Double
+            trophy for you! / Twice. In case, the first time didn't work. /
+            Yeah, to make double sure.
+        - GRUBBO: after...meal / after...meals / after...eat / after...eating /
+            after...breakfast / after...lunch / after...dinner -> (amused) You
+            scrub out all the gristle and goo. / It's like toothpaste is your
+            after-meal dessert. / Yeah, take that post-meal stank off your gummy
+            stubs.
+        - GRUBBO: floss / flosssing -> (angry) I didn't ask about flossing! / I only asked
+            your about brushing, not flossing! / Oh, you had to bring up the
+            flossing! Show off. / Don't tell me about your disgusting flossing!
+      postDelay: 6
+  - GRUBBO:
+      dialogue: You got matching socks?
+      replies:
+        - GRUBBO: yes / yeah / I do -> (amused) How sophisticated. / Ooh, symmetrical. /
+            Left sock same as the right one.
+        - GRUBBO: no / nope / I don't...] / I do not...] -> (amused) You manic pixie
+            dreamboat. / Flying your freak flag high. / Ooh getting wild with
+            the sockies.
+      postDelay: 6
+  - GRUBBO: (suspicious) I bet you're out there every day...
+  - GRUBBO: tickling those baby newtons... / finessing and digressing... / harassing
+      the masses... / quibbling with grammar...
+  - GRUBBO: (irritated) Yanking loose drawstrings... / Extending warranties... /
+      Delivering news that is neither good or bad... / Assembling furniture that
+      isn't even yours... / Beating a path to your own door... / Sipping drinks
+      through long, underground straws...
+  - GRUBBO:
+      dialogue: (angry) And wiping morsels off your uncle's chin! / And claiming
+        islands for Spain! / And taking a too long a time on the see-saw! / And
+        not banking your nuts for the long winter coming!
+      replies: []
+      postDelay: 2
+  - GRUBBO: (thinking) That's all fine, but let me ask you... / It's what I expect,
+      but I gotta ask you... / I won't stop you. But I do want to know...
+  - GRUBBO:
+      dialogue: (confused) Are you gripping or slipping? / Are you souping or
+        drooping? / Are you hemming or hawing? / Are you horsing or remorsing?
+      replies:
+        - GRUBBO: gripping / grip -> (amused) You got a firm grip on unreality. / Oh,
+            yeah. Gripping so tight.
+        - GRUBBO: slipping / slip -> (amused) Slip, slip, sliding away. / Yeah, you're
+            like the decline of Western civilization over there.
+        - GRUBBO: soup / souping -> (amused) Yeah, sinking in your own soup. / In fact,
+            you're the soupiest person I know.
+        - GRUBBO: droop / drooping -> (thinking) Yeah, gravity is just relentless these
+            days. / Some parts stay up. The others go down. / You're drooping
+            and there's no recouping.
+        - GRUBBO: hem / hemming -> (amused) Oh, yeah, get out your sewing machine and do
+            some hemming. / You're like Chris Hemsworth over there.
+        - GRUBBO: ha / haw / hawing -> (amused) Ha ha haw! / Well, somebody's gotta haw.
+        - GRUBBO: horse / horsing / horsey -> (amused) Horse-housing around with your
+            hyper cousins. / Yeah, you always wanted a pony.
+        - GRUBBO: remorse / remorseful -> (amused) Regretting your future misdeeds, I bet.
+            / Yeah, a little sadness creeping in around the edges.
+      postDelay: 6
+  - GRUBBO:
+      dialogue: Rate yourself on a scale between one and... uh... nine.
+      replies:
+        - GRUBBO: one / won -> (irritated) One? Stop with the false modesty. / One? You
+            humble-bragging about being pathetic?
+        - GRUBBO: two / to / too -> (irritated) Two? Oh, at least give yourself a three. /
+            Two? I don't believe you believe that.
+        - GRUBBO: three -> (irritated) You think you're a three, eh? / Three? Keeping your
+            poppy head low, I see.
+        - GRUBBO: four / for -> (irritated) Four? That's like saying you're almost
+            half-good. / Four out of nine? That's not what you tell yourself.
+        - GRUBBO: five -> (irritated) Five. So you think you're slightly better than
+            average. / Five. Paying yourself a mild compliment, I guess.
+        - GRUBBO: six -> (irritated) Six. Spoken like somebody who doesn't want to brag. /
+            Six, right. In the mirror, you say "nine" every time.
+        - GRUBBO: seven -> (irritated) Seven? Really. You think you're a seven. / Fat
+            Elvis was a seven. You're no seven.
+        - GRUBBO: eight / ate / hate -> (irritated) Oh, you were thinking nine, but
+            dropped yourself down one notch. / Eight. So you're saying you're
+            almost the very best.
+        - GRUBBO: nine -> (irritated) Nine. Yeah, my rating for you is much lower. / Nine.
+            More like point nine.
+        - GRUBBO: ten -> (angry) I said one to nine, idiot! / This isn't a scale of one to
+            ten! / You should listen to instructions better, dummy!
+        - GRUBBO: eleven / twelve / thirteen / fourteen / fifteen / sixteen / seventeen /
+            eighteen / nineteen / hundred / thousand / million / billion ->
+            (irritated) Sigh. I just say "sigh". / Yeah, you're failing at basic
+            math here. / What's the point of talking to you if you can't answer
+            a simple question? / Ooh, give yourself a score of infinity
+            greatness while you're at it.
+        - GRUBBO: no / nope / don't want to / I won't -> (irritated) Oh, then you get the
+            default rating of zero. / Too bad for the World. / Fine, don't
+            evaluate yourself.
+      postDelay: 6
+  - GRUBBO: (suspicious) Here's how I know you think you're better than me...
+  - GRUBBO: (suspicious) And don't lie... / Tell the truth... / Speak the truth... /
+      For real, for real...
+  - GRUBBO:
+      dialogue: (confused) If I invite you to a party, will you come?
+      replies:
+        - GRUBBO: yes / yeah / sure / I would / I will / definitely] / certainly] /
+            absolutely] / of course -> (amused) It's hypothetical. I didn't
+            actually invite you. / Don't get excited. I said "if" I invite you.
+            / Look at you. So eager!
+        - GRUBBO: no / nope / not coming / I won't / I will not / not interested ->
+            (amused) Good! I didn't actually invite you. / Fine by me. / Yeah,
+            it's on Tuesday when you're brushing your teeth. / Maybe living in
+            fear of a good time works for you.
+        - GRUBBO: maybe / possibly / it depends / i might / i could -> (irritated) Trying
+            to annoy me with a "maybe" RSVP. / Ooh, Schrodinger's party guest. /
+            So I can count on you to possibly be there. Cool.
+      postDelay: 6
+  - GRUBBO:
+      dialogue: (confused) Okay, say you're throwing a party. Am I invited?
+      replies:
+        - GRUBBO: yes / yeah / sure / certainly / definitely / absolutely / of course] /
+            why not] -> (suspicious) Throwing me a little doggie bone, eh? / Oh,
+            an act of philanthropy. / Easy to fake-invite me now. But maybe I'll
+            just show up.
+        - GRUBBO: no / nope / can't / don't want / absolute not / definitely not / of
+            course not / certainly not -> (sad) Well, maybe I just show up
+            anyhow. / Yeah, now we see how you see me. / I didn't want go to
+            your smelly party anyhow.
+        - GRUBBO: maybe / possibly / it depends / i might / i could -> (irritated) Yeah, I
+            just heard "no". / Yeah, if the seventy-nine moons of Jupiter align.
+            / Oh, if only I could gain your favor!
+      postDelay: 6
+  - GRUBBO: (amused) If I go to that party, I'm bringing you...
+  - GRUBBO:
+      dialogue: (happy) a full ten-pound bag of used cat food. / a mason jar of
+        ancient Aztec lollipops. / a recall notice for your favorite childhood
+        toy. / a sloppy sack of hobo train ride dreams. / the loose end of a
+        five-mile rope that's tied to something. / a recipe for disaster cream
+        pie. / the most glamorous castanet in six out of seven counties. / a
+        gopher that screams in his sleep for crimes of the past. / a big old
+        hunk of styrofoam.
+      replies: []
+      postDelay: 2
+  - GRUBBO:
+      dialogue: Would you be grateful as a pilgrim? / Would that make you feel the
+        magic? / Would you smile like the King of Smiling?
+      replies:
+        - GRUBBO: yes / yeah / sure / definitely / absolutely / certainly / of course ->
+            (amused) Hey, I'm only here to make you happy. / I'm glad that's all
+            it would take. / Oh, well, you deserve it.
+        - GRUBBO: no / not really / nope -> (irritated) Then I'll have to think of a
+            better present for you. / So sorry to disappoint you. / Yeah, that's
+            not good enough for somebody of your importance.
+      postDelay: 6
+  - GRUBBO: (thinking) When it comes to you and me...
+  - GRUBBO: You'll be butter, and I'll be glue. / I'll be the mystery meat in your
+      hot glam sandwich. / You'll be the captain, but I'll be the boat. / You'll
+      go west. I'll go east. Everybody else stay put. / I'll start the parade,
+      but you're gonna finish it.
+  - GRUBBO: And you'll be pre-funking and spelunking. / And you'll be sharpening
+      your spoons. / And you'll be whipping cream into a frenzy. / And you'll be
+      straddling the borders of decencies. / And you'll be huddling with
+      yourself at half-time.
+  - GRUBBO: (thinking) And in the end... / And all things considered... / Taking
+      everything into account...
+  - GRUBBO: That's just how it's gotta be. / It's the only thing that makes sense. /
+      It's just what we gotta do.
+  - GRUBBO:
+      dialogue: Do you agree?
+      replies:
+        - GRUBBO: yes / yeah / of course / certainly / i do / absolutely / definitely /
+            certainly / sure -> At least, we have an understanding. / That much
+            is good. / Well, then that's settled.
+        - GRUBBO: no / nope / I don't / I do not / disagree -> (sad) What are you? Some
+            kind of iconoclast? / You always gotta be against me. / Fine, then
+            we can just go separate ways.
+        - GRUBBO: maybe / possibly / perhaps / it depends -> (irritated) Jeez, this isn't
+            signing a treaty for the Peace of Westfalia. / It's a pretty simple
+            proposition. / Oh, you like to keep your options open.
+      postDelay: 10
+  - GRUBBO:
+      dialogue: I got nothing more to say to you. / I said what I meant to say. /
+        We're done talking. You can go now.
+      replies:
+        - GRUBBO: neither / fine / okay / same for me / me too -> Yeah, fine. / Uh-huh. /
+            Then stop talking.
+      postDelay: 0
+rootReplies:
+  - GRUBBO: hey] / hi / hello / greetings -> (irritated) Hey. / Hi. / Hello.
+  - GRUBBO: mean -> (amused) I'm such a meanie. / I'm so mean. / Yeah, I'm so mean.
+  - GRUBBO: rude -> (amused) Deal with it. / Yeah, I'm rude. So what? / That's how
+      it goes, Buckorooney. / I'm a rude dude. / But it's all justified.
+  - GRUBBO: i...don't like / I...do not like / I...hate / I...dislike -> (amused)
+      Toughen up, Buttercup. / Too bad, so sad. / Oh, so sorry. / Oh, your poor
+      feelings. / I don't care.
+  - GRUBBO: I don't understand] / what] / I'm confused] / what do you mean] / what
+      are you saying / what did you say / I am confused / huh] -> (irritated)
+      I'm keeping it simple here. / Listen harder. / Keep up. / I won't repeat
+      myself. / Hear what I'm saying. / I said it simple. / I'll use little
+      words for you.
+  - GRUBBO: shut up / quiet / shush / silence -> (irritated) I say what I want. /
+      You can't stop me. / No. / I do what I want. / I won't. / No way.
+  - GRUBBO: we be friends / be my friend / be your friend / be friendly / let's be
+      friends -> (amused) Oh, we're gonna pals, eh? / Yeah, yeah, we'll be
+      friends. / You and me getting chummy? I doubt it. / Not possible. / Ooh,
+      offering friendship? How enticing.
+  - GRUBBO: fuck / fucking / shit / bullshit / crappy / goddamn / damn / god damn /
+      cock / pussy / cunt / asshole / cocksucker / dick / go to hell -> (evil)
+      Fucking fuck shitty poo poo. / Cock shit fucky damn doo. / Assy damn bam
+      cock pipe. / Shitty crap slap spoohickey.
+  - GRUBBO: go away / leave me alone / [go] / get away from me -> (amused) I'm
+      staying right here. / You can go. / No way no how. / Will I leave? Nope. /
+      Not gonna.
+  - GRUBBO: goodbye / [bye / I'm leaving / I am leaving / I'm going / I am going /
+      so long -> (amused) Yeah, then go. / Suits me fine. / Yeah, you go. I'll
+      stay. / I'm fine with that.
+  - GRUBBO: your business / that is private / that's private / for me to know /
+      won't tell you / can't tell you / don't want...say / don't want...tell /
+      can't say / won't say -> (irritated) Oh, super-secret! / You got your
+      precious little secrets. / Ooh, you don't want to say. / I wonder why you
+      won't say. / Loosen those lips. / Don't be fragile.
+  - GRUBBO: you just said that / you already said that / repeating yourself / repeat
+      yourself / same thing twice -> (amused) Sometimes I say it twice, and
+      sometimes I say it twice. / I say things multiple times so you get the
+      message. / Yeah, well listen to me each time.
+  - GRUBBO: who...are you / what's your name / what...your name -> (happy) I'm
+      Grubbo. / My name is Grubbo. / Grubbo--that's my name. / I am Grubbo.
+  - GRUBBO: what do you want -> (evil) I want you to see how terrible you are. / I
+      want to bring you down a peg. / I'd be happy with some conventional
+      suffering from you. / I want to be your brand new bully.
+  - GRUBBO: what can I do -> (evil) What can you do?
+  - GRUBBO: what should I do / what can I do / want me to do -> (evil) Break into
+      your own house and steal everything. / Seduce a pack of alleycats. / Get
+      yourself a t-shirt with no neck-hole. / Make yourself a knuckle sandwich
+      and eat it. / Sit on the top of a flagpole. / Wallow in your problematic
+      existence.
+  - GRUBBO: my name is -> (irritated) I don't care. / I don't care what your name
+      is. / I already know your name. / Can you stop talking about yourself? /
+      Do you have to tell me? / Who cares?
+  - GRUBBO: I am] -> (irritated) You love talking about yourself. / Oh, yes,
+      everyone wants to know about you. / You are the bunion on my funion. / Say
+      less.
+  - GRUBBO: why are you...] -> (irritated) If you don't know, it's not my problem. /
+      Think about it. / I feel like not explaining it to you. / Your ignorance
+      is the real mystery. / Why are you asking me stupid questions?
+  - GRUBBO: interrupt / interrupting -> (evil) You want me to stop interrupting you?
+      / Ask me again to not interrupt you. / Am I interrupting you? / I
+      interrupt you right before you run out of things to say. / Interrupting
+      you is like a mercy killing. / If I let you keep talking, you just say
+      boring things.
 defaultCharacter: GRUBBO

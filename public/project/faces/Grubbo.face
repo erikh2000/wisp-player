@@ -1,7 +1,7 @@
-base: https://shared.wisp.studio/parts/billy-head.yml @-145,-200,290,400
+base: https://shared.wisp.studio/parts/billy-head.yml @61,405,290,400
 irisColor: original
 skinTone: original
-hairColor: original
+hairColor: silverLight
 parts:
   - https://shared.wisp.studio/parts/billy-eyes.yml @25,150,256,128
   - https://shared.wisp.studio/parts/billy-mouth.yml @20,290,256,128
