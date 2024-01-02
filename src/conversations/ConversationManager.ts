@@ -1,12 +1,11 @@
 import ConversationSpeed, {getMultiplierForConversationSpeed} from "./ConversationSpeed";
 import SpeechAudioIndex from "./SpeechAudioIndex";
 import {spielEmotionToEmotion} from "./spielEmotionUtil";
-// import {setSpeechAudioSpeakingFace} from "facesCommon/interactions/faceEventUtil";
 import {UNSPECIFIED_NAME} from "@/persistence/projects";
 
 import {Emotion, FakeSpeechAudio, ISpeechAudio} from 'sl-web-face';
 import {Spiel, SpielLine, SpielReply} from 'sl-spiel';
-import {calcEndOfDialoguePause, Recognizer} from "sl-web-speech";
+import {Recognizer} from "sl-web-speech";
 import {setSpeechAudioSpeakingFace} from "@/playScreen/interactions/faceInteractions.ts";
 
 // See README.md for a description of the ConversationManager's state machine.
@@ -25,6 +24,10 @@ type SetEmotionCallback = (emotion: Emotion) => void;
 type TranscribeCallback = (text:string, replaceIfAddsToLine?:boolean) => void;
 type StateChangeCallback = (newState:ConversationState) => void;
 
+const BEAT_DURATION = 0.5;
+function _calcPostSpeechDelay(postDelayBeatCount:number, speedMultiplier:number) {
+  return postDelayBeatCount * BEAT_DURATION * speedMultiplier * 1000;
+}
 
 // Call init() from sl-web-speech before using this class.
 class ConversationManager {
@@ -200,7 +203,7 @@ class ConversationManager {
     }
   }
 
-  private async _speak(line:SpielLine, onSpeakEnd:() => void) {
+  private async _speak(line:SpielLine, postDelay:number, onSpeakEnd:() => void) {
     if (!this._spiel) throw Error('Unexpected');
     const dialogue = line.nextDialogue();
     const character = line.character;
@@ -215,7 +218,7 @@ class ConversationManager {
     if (!this._currentSpeechAudio) this._currentSpeechAudio = new FakeSpeechAudio(dialogue, this._speedMultiplier);
     setSpeechAudioSpeakingFace(this._currentSpeechAudio);
 
-    this._pendingPauseDuration = calcEndOfDialoguePause(dialogue, this._speedMultiplier);
+    this._pendingPauseDuration = _calcPostSpeechDelay(postDelay, this._speedMultiplier);
     this._currentSpeechAudio.play(onSpeakEnd.bind(this));
   }
   
@@ -225,7 +228,7 @@ class ConversationManager {
     try {
       this._recognizer.mute();
       this._changeState(ConversationState.SPEAKING_LINE);
-      await this._speak(currentNode.line, this._handleLineSpeechEnd);
+      await this._speak(currentNode.line, currentNode.postDelay, this._handleLineSpeechEnd);
     } catch(e) {
       console.error(e);
       this._goToStopped();
@@ -239,7 +242,7 @@ class ConversationManager {
       this._changeState(ConversationState.SPEAKING_REPLY);
       const { line } = this._pendingReply;
       this._pendingReply = null;
-      await this._speak(line, this._handleReplySpeechEnd);
+      await this._speak(line, 0, this._handleReplySpeechEnd);
     } catch(e) {
       console.error(e);
       this._goToStopped();
